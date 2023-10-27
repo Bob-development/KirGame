@@ -1,26 +1,69 @@
-import { AdvancedComponent } from "../../../../core/Component";
-
 export class House {
     #area;
-    #location;
+    #size;
     #price;
     #description;
-    #element;
-    #elementImg;
+    #imgSrc
     
-    constructor(){
-        this.#elementImg = new AdvancedComponent({
-            tagName: 'img',
-            className: 'house-img',
-            src: '../../public/Houses/House1.jpg'
-        })
+    constructor({
+        area,
+        size,
+        price,
+        description,
+        imgSrc
+    }){
+       this.#area = area; 
+       this.#size = size; 
+       this.#price = price; 
+       this.#description = description;
+       this.#imgSrc = imgSrc;
+    }
 
-        this.#element = new AdvancedComponent({
-            tagName: 'div',
-            className: 'house',
-            children:[
-                this.#elementImg
-            ]
-        })
+    setArea(area){
+        this.#area = area;
+    }
+
+    getArea(){
+        return this.#area;
+    }
+
+    //--------------------------------
+
+    setSize(size){
+        this.#size = size;
+    }
+
+    getSize(){
+        return this.#size;
+    }
+
+    //--------------------------------
+
+    setPrice(price){
+        this.#price = price + ' €$';
+    }
+
+    getPrice(){
+        return this.#price;
+    }
+
+    //--------------------------------
+
+    setDescription(description){
+        this.#description = description;
+    }
+
+    getDescription(){
+        return this.#description;
+    }
+
+    //--------------------------------
+
+    setImgSrc(imgSrc){
+        this.#imgSrc = imgSrc;
+    }
+
+    getImgSrc(){
+        return this.#imgSrc;
     }
 }

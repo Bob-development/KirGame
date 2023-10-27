@@ -1,64 +1,90 @@
 import { AdvancedComponent } from "../../../../core/Component";
 
 export class Car {
-    // #LOW_COST_CAR_IMG = '../../public/Cars/LowCostCar.jpg';
-    // #MIDDLE_COST_CAR_IMG = '../../public/Cars/MiddleCostCar.jpg';
-    // #HIGH_COST_CAR_IMG = '../../public/Cars/HighCostCar.jpg';
-    
-    #carBody;
-    #carPower;
+    #body;
+    #power;
     #price;
     #description;
-    #element;
-    #elementImg;
+    // #element;
+    // #elementImg;
     #imgSrc;
     
     constructor({
-        carBody, 
-        carPower, 
+        body, 
+        power, 
         price, 
         description,
+        imgSrc
     }){
-        this.#carBody = carBody;
-        this.#carPower = carPower;
+        this.#body = body;
+        this.#power = power;
         this.#price = price;
         this.#description = description;
+        this.#imgSrc = imgSrc;
         
-        this.#elementImg = new AdvancedComponent({
-            tagName: 'img',
-            className: 'car-img',
-            src: this.#imgSrc
-        })
+        // this.#elementImg = new AdvancedComponent({
+        //     tagName: 'img',
+        //     className: 'car-img',
+        //     src: this.#imgSrc
+        // })
 
-        this.#element = new AdvancedComponent({
-            tagName: 'div',
-            className: 'car',
-            children:[
-                this.#elementImg
-            ]
-        })
+        // this.#element = new AdvancedComponent({
+        //     tagName: 'div',
+        //     className: 'car',
+        //     children:[
+        //         this.#elementImg
+        //     ]
+        // })
 
         
-        // return this.#element;
     }
 
-    setCarBody(value){
-        this.#carBody = value;
+    setCarBody(body){
+        this.#body = body;
     }
 
-    setCarPower(value){
-        this.#carPower = value;
+    getCarBody(){
+        return this.#body;
     }
 
-    setPrice(value){
-        this.#price = value;
+    //--------------------------------
+
+    setCarPower(power){
+        this.#power = power;
     }
 
-    setDescription(value){
-        this.#description = value;
+
+    getCarPower(){
+        return this.#power;
     }
 
-    setImgSrc(value){
-       this.#imgSrc = value;
+    //--------------------------------
+
+    setPrice(price){
+        this.#price = price + ' €$';
+    }
+
+    getPrice(){
+        return this.#price;
+    }
+
+    //--------------------------------
+
+    setDescription(description){
+        this.#description = description;
+    }
+
+    getDescription(description){
+        return this.#description;
+    }
+
+    //--------------------------------
+
+    setImgSrc(src){
+       this.#imgSrc = src;
+    }
+    
+    getImgSrc(){
+       return this.#imgSrc;
     }
 }

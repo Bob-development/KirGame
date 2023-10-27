@@ -31,35 +31,81 @@ export class Human{
         this.#job = job;
     }
 
-    setName(value){
-        this.#name = value;
+    setName(name){
+        this.#name = name;
     }
 
-    setSurname(value){
-        this.#surname = value;
-    }
-    
-    setAge(value){
-        this.#age = value;
-    }
-    
-    setGender(value){
-        this.#gender = value;
+    getName(){
+        return this.#name;
     }
 
-    setBalance(value){
-        this.#balance = value;
+    //--------------------------------
+
+    setSurname(surname){
+        this.#surname = surname;
     }
 
-    setRel(value){
-        this.#rel = value;
+    getSurname(){
+        return this.#surname;
     }
     
+    //--------------------------------
+
+    setAge(age){
+        this.#age = age;
+    }
+
+    getAge(){
+        return this.#age;
+    }
+
+    //--------------------------------
+
+    setGender(gender){
+        this.#gender = gender;
+    }
+
+    getGender(){
+        return this.#gender;
+    }
+
+    //--------------------------------
+
+    setBalance(balance){
+        this.#balance = balance;
+    }
+
+    getBalance(){
+        return this.#balance;
+    }
+
+    //--------------------------------
+
+    setRel(rel){
+        this.#rel = rel;
+    }
+
+    getRel(){
+        return this.#rel;
+    }
+    
+    //--------------------------------
+
     setJob(job){
         this.#job = job;
     }
 
+    getJob(){
+        return this.#job;
+    }
+    
+    //--------------------------------
+
     setSalary(salary){
         this.#salary = salary;
+    }
+
+    getSalary(){
+        return this.#salary;
     }
 }
