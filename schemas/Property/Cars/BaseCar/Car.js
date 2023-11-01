@@ -21,22 +21,6 @@ export class Car {
         this.#price = price;
         this.#description = description;
         this.#imgSrc = imgSrc;
-        
-        // this.#elementImg = new AdvancedComponent({
-        //     tagName: 'img',
-        //     className: 'car-img',
-        //     src: this.#imgSrc
-        // })
-
-        // this.#element = new AdvancedComponent({
-        //     tagName: 'div',
-        //     className: 'car',
-        //     children:[
-        //         this.#elementImg
-        //     ]
-        // })
-
-        
     }
 
     setCarBody(body){

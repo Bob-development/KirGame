@@ -8,7 +8,8 @@ import { TychoHouse } from "./Houses/Tycho_House/TychoCity";
 //CARS
 import { Car } from "./Cars/BaseCar/Car";
 import { ExpensiveCar } from "./Cars/ExpensiveCar/ExpensiveCar";
+import {AverageCar} from "./Cars/AverageCar/AverageCar"
 import { CheapCar } from "./Cars/CheapCar/CheapCar";
 
 
-export {House, NightCityHouse, OsakaHouse, SeattleHouse, TychoHouse, Car, ExpensiveCar, CheapCar};
+export {House, NightCityHouse, OsakaHouse, SeattleHouse, TychoHouse, Car, ExpensiveCar, AverageCar, CheapCar};
