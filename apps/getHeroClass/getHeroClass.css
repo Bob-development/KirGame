@@ -1,0 +1,46 @@
+@import url("../../variables.css");
+
+.heroClass-title{
+    padding: 50px;
+    font-family: Cyberpunk;
+    font-size: 70px;
+    user-select: none;
+}
+
+.hero-classes-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#riper-img{
+    width: 300px;
+    height: 500px;
+}
+
+#clerk-img{
+    width: 350px;
+    height: 500px;
+}
+
+#netrunner-img, #clerk-img, #fixer-img, #riper-img{
+    margin-bottom: 100px;
+}
+
+#driver-img{
+    margin-top: 125px;
+    margin-bottom: 125px;
+}
+
+#driver-img:hover, #netrunner-img:hover, #clerk-img:hover, #fixer-img:hover, #riper-img:hover{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px 0px rgba(199, 140, 13, 0.4);
+    background-color: rgba(199, 140, 13, 0.2);
+    cursor: pointer;
+}
+
+.netrunner-title, .driver-title, .clerk-title, .fixer-title, .riper-title{
+    font-family: Cyberpunk;
+    font-size: 40px;
+    user-select: none;
+}

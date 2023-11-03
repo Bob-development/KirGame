@@ -7,5 +7,7 @@ import { NightCityHouse, OsakaHouse, SeattleHouse, TychoHouse, ExpensiveCar, Ave
 import { HeroAvatar } from '../../schemas/Hero';
 
 export class Form {
-    constructor(){}
+    constructor(){
+        
+    }
 }

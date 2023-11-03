@@ -1,6 +1,6 @@
 import { Human } from "../Human/Human";
 
-export class Developer extends Human{
+export class Netrunner extends Human{
     #DEVELOPER_SALARY = 499;
 
     constructor({

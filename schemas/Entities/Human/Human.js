@@ -22,8 +22,11 @@ export class Human{
     }){
         this.#name = name;
         this.#surname = surname;
-        if(age) this.#age = age;
-        this.#age = this.#DEFAULT_AGE;
+        
+        if(age){
+            this.#age = age;
+        }else this.#age = this.#DEFAULT_AGE;
+        
         this.#salary = salary;
         this.#gender = gender;
         this.#balance = balance;

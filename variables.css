@@ -1,0 +1,10 @@
+/* FONTS */
+@font-face {
+    font-family: Cyberpunk;
+    src: url('./public/Fonts/Cyberpunk/Cyberpunk-Regular.ttf');
+}
+
+@font-face {
+    font-family: Main;
+    src: url('./public/Fonts/BebasNeue/BebasNeue-Regular.ttf');
+}
