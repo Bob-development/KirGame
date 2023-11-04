@@ -31,7 +31,7 @@ export class getHero{
                     textContent: 'MEN',
                     events:{
                         click: ()=>{
-                            console.log('men');
+                            this.isButtonActive(menImages)
                         }
                     }
                 }),
@@ -42,7 +42,7 @@ export class getHero{
                     textContent: 'WOMEN',
                     events:{
                         click: ()=>{
-                            console.log('women');
+                            this.isButtonActive(womenImages)
                         }
                     }
                 })
@@ -62,5 +62,13 @@ export class getHero{
         appendMany(getHeroApp, [menImages, btnsWrapper, womenImages]);
 
         return getHeroApp;
+    }
+
+    isButtonActive(images){
+        if(images.style.display === 'none'){
+            images.style.display = 'grid';
+        } else {
+            images.style.display = 'none';
+        }
     }
 }

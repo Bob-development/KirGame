@@ -13,7 +13,7 @@
 }
 
 .menBTNS, .womenBTNS{
-    display: grid;
+    display: none;
     gap: 50px
 }
 
