@@ -128,12 +128,7 @@ export class GetHeroClass extends AdvancedComponent{
                     src: '../../public/AdditionalImages/HeroClass/Clerk.png',
                     events:{
                         'click': ()=>{
-<<<<<<< HEAD
                             render(app, new GetHero({heroClass: new Clerk({})}))
-=======
-                            //new class
-                            render(app, new Clerk({}))
->>>>>>> cde40883d38b0c43af6d0cb9f0a5405921cc8d8d
                         }
                     }
                 }),

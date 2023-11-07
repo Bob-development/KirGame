@@ -14,7 +14,7 @@
 
 .menBTNS, .womenBTNS{
     display: none;
-    gap: 50px
+    gap: 50px;
 }
 
 .V-avatar, .Jackie-avatar, .Kirill_Silverhand-avatar, .Evelyn_Parker-avatar, .Judy-avatar, .Panam-avatar{
@@ -23,7 +23,7 @@
 }
 
 .V-avatar:hover, .Jackie-avatar:hover, .Kirill_Silverhand-avatar:hover, .Evelyn_Parker-avatar:hover, .Judy-avatar:hover, .Panam-avatar:hover{
-    cursor: pointer;
+    cursor:pointer
 }
 
 .hero-title{
@@ -35,7 +35,6 @@
     font-family: Cyberpunk;
     font-size: 35px;
     border-radius: 1rem;
-    text-shadow: ;
     text-shadow: 5px 0px 3px rgba(168,190,56,0.78);;
 }
 
