@@ -123,4 +123,12 @@ export class GetHero{
 
         return getHeroApp;
     }
+
+    isButtonActive(images){
+        if(images.style.display === 'none'){
+            images.style.display = 'grid';
+        } else {
+            images.style.display = 'none';
+        }
+    }
 }
