@@ -2,9 +2,10 @@ import { AdvancedComponent, Component } from "../../core/Component";
 import { Driver, Clerk, Netrunner, Admin, Doctor } from "../../schemas/Entities";
 import { append, appendMany } from "../../core/append";
 import { app } from "../../main";
+import { GetHero } from "../getHero/getHero";
+import { render } from "../../core/render";
 
 import './getHeroClass.css'
-import { render } from "../../core/render";
 
 export class GetHeroClass extends AdvancedComponent{
     constructor(){
@@ -32,7 +33,12 @@ export class GetHeroClass extends AdvancedComponent{
                 new AdvancedComponent({
                     tagName: 'img',
                     id: 'netrunner-img',
-                    src: '../../public/AdditionalImages/HeroClass/Netrunner.png'
+                    src: '../../public/AdditionalImages/HeroClass/Netrunner.png',
+                    events:{
+                        'click': ()=>{
+                            render(app, new GetHero({heroClass: new Netrunner({})}))
+                        }
+                    }
                 }),
 
                 new AdvancedComponent({
@@ -50,7 +56,12 @@ export class GetHeroClass extends AdvancedComponent{
                 new AdvancedComponent({
                     tagName: 'img',
                     id: 'fixer-img',
-                    src: '../../public/AdditionalImages/HeroClass/Fixer.png'
+                    src: '../../public/AdditionalImages/HeroClass/Fixer.png',
+                    events:{
+                        'click': ()=>{
+                            render(app, new GetHero({heroClass: new Admin({})}))
+                        }
+                    }
                 }),
 
                 new AdvancedComponent({
@@ -68,7 +79,12 @@ export class GetHeroClass extends AdvancedComponent{
                 new AdvancedComponent({
                     tagName: 'img',
                     id: 'driver-img',
-                    src: '../../public/AdditionalImages/HeroClass/Driver.png'
+                    src: '../../public/AdditionalImages/HeroClass/Driver.png',
+                    events:{
+                        'click': ()=>{
+                            render(app, new GetHero({heroClass: new Driver({})}))
+                        }
+                    }
                 }),
 
                 new AdvancedComponent({
@@ -86,7 +102,12 @@ export class GetHeroClass extends AdvancedComponent{
                 new AdvancedComponent({
                     tagName: 'img',
                     id: 'riper-img',
-                    src: '../../public/AdditionalImages/HeroClass/Riper.png'
+                    src: '../../public/AdditionalImages/HeroClass/Riper.png',
+                    events:{
+                        'click': ()=>{
+                            render(app, new GetHero({heroClass: new Doctor({})}))
+                        }
+                    }
                 }),
 
                 new AdvancedComponent({
@@ -107,7 +128,7 @@ export class GetHeroClass extends AdvancedComponent{
                     src: '../../public/AdditionalImages/HeroClass/Clerk.png',
                     events:{
                         'click': ()=>{
-                            render(app, new Clerk({}))
+                            render(app, new GetHero({heroClass: new Clerk({})}))
                         }
                     }
                 }),

@@ -1,20 +1,20 @@
 .getHeroApp{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 100vh;
     align-items: center;
+    user-select: none;
 }
 
 .btns-wrapepr{
-    width: 300px;
+    width: 900px;
     display: flex;
-    justify-content: space-around;
-    padding: 0px 100px;
+    justify-content: space-between;
 }
 
 .menBTNS, .womenBTNS{
-    display: grid;
-    gap: 50px
+    display: none;
+    gap: 50px;
 }
 
 .V-avatar, .Jackie-avatar, .Kirill_Silverhand-avatar, .Evelyn_Parker-avatar, .Judy-avatar, .Panam-avatar{
@@ -22,12 +22,40 @@
     height: 200px;
 }
 
+.V-avatar:hover, .Jackie-avatar:hover, .Kirill_Silverhand-avatar:hover, .Evelyn_Parker-avatar:hover, .Judy-avatar:hover, .Panam-avatar:hover{
+    cursor: pointer;
+}
+
 .hero-title{
     font-family: Main;
     font-size: 30px;
 }
 
+.img-descr{
+    font-family: Cyberpunk;
+    font-size: 35px;
+    border-radius: 1rem;
+    text-shadow: ;
+    text-shadow: 5px 0px 3px rgba(168,190,56,0.78);;
+}
+
 .men-button, .women-button{
-    font-family: main;
-    font-size: 25px;
+    transition: all 300ms;
+    margin-bottom: 50px;
+}
+
+.women-button{
+    margin-bottom: 45px;
+}
+
+.men-button:hover, .women-button:hover{
+    cursor: pointer;
+}
+
+
+.-active{
+    transform: scale(-1,1);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px 0px rgba(199, 140, 13, 0.4);
+    background-color: rgba(199, 140, 13, 0.2);
 }

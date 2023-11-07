@@ -6,14 +6,14 @@ import { City, NightCity } from './schemas/Cities/index';
 import { House, NightCityHouse, Car, ExpensiveCar, CheapCar } from './schemas/Property';
 import { HeroAvatar } from './schemas/Hero';
 import { GetHeroClass } from './apps/getHeroClass/getHeroClass';
-import { getHero } from './apps/getHero/getHero';
+import { GetHero } from './apps/getHero/getHero';
 
 import './style.css'
 
 export const app = document.querySelector("#app");
 
-const a = new getHero();
+const a = new GetHeroClass({});
 
 append(app, a)
 
-console.log(a);
+// console.log(a);

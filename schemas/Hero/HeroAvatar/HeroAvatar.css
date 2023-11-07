@@ -1,0 +1,60 @@
+#heroFormWrapper{
+    display: grid;
+    justify-content: center;
+    gap: 80px;
+}
+
+.heroForm{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 30px 0px rgba(177, 121, 165, 0.2);
+    background-color: rgba(169, 3, 175, 0.2);
+}
+
+.hero-form-img{
+    height: 500px;
+    width: 350px;
+}
+
+.hero-data-wrapper{
+    width: 300px;
+    display: grid;
+    gap: 20px;
+    font-family: Main; 
+    font-size: 30px;
+}
+
+.hero-name, .hero-surname, .hero-gender{
+    font-family: Cyberpunk;
+}
+
+.name-wrapepr, .surname-wrapepr, .gender-wrapepr{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.btns-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+#start-game-btn, #make-new-hero-btn{
+    width: 150px;
+}
+
+.add-year, .add-month{
+    width: 250px;
+    margin-left: 30px;
+}
+
+#make-new-hero-btn, #start-game-btn{
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px 0px rgba(177, 121, 165, 0.2);
+    background-color: rgba(169, 3, 175, 0.2);
+}

@@ -4,7 +4,7 @@ export class Admin extends Human{
     #ADMIN_SALARY = 399;
 
     constructor({
-        name,
+        name = '',
         surname,
         age,
         salary,
